@@ -1,0 +1,15 @@
+server:
+  port: 4040
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: local
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: local
+  jpa:
+    hibernate:
+      ddl-auto: "update "
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
